@@ -1,17 +1,23 @@
-.task {
+body{
+	margin: 50px;
+}
+
+input[type=text] {
 	border: 2px solid;
-	width: 30%;
+	width: 40%;
 	border-radius: 5px;
 	padding: 5px;
 	font-size: 30px;
 }
 
-.subtask_sizer {
-	width: 30%;
+
+
+.subtask_sizer, #subtask_set {
+	width: 100%;
 }
 
+
 .subtask {
-	border: 2px solid;
 	border-color:808080;
 	color:808080;
 	width: 100%;
@@ -21,6 +27,29 @@
 	font-size: 30px;
 }
 
-.entry {
-	margin:20px;
+.task {
+	margin-bottom: 10px;
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.addTask {
+
+  	color: #555;
+  	text-align: center;
+	font-size: 50px;
+
+}
+
+
+.addTask:hover {
+  color: #bbb;
 }
