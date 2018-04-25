@@ -13,6 +13,7 @@ input[type=text] {
 
 
 .subtask_sizer, #subtask_set {
+	transition: 0.3s;
 	width: 100%;
 }
 
@@ -49,6 +50,8 @@ li {
 	
 
 }
+
+
 
 
 .addTask:hover {
