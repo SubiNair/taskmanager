@@ -50,14 +50,7 @@ ul {
 }
 
 li {
-	margin-bottom: 15px;
-	border: #000 solid 1px;
-	padding: 10px;
-	
-}
-
-li:empty {
-   border: none;
+	margin-bottom: 15px;	
 }
 
 
