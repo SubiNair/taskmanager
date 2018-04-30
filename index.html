@@ -1,9 +1,13 @@
 <html>
+<html>
 <head>
   <meta charset="utf-8">
   <title>To-do List</title>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
   <link rel="stylesheet" href="todolist.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="todolist.js"></script>
 </head>
 
 
@@ -14,7 +18,8 @@
 
 
 <div class="task">
-<input type="text" id = "TaskName" placeholder="Task Name...">
+  <input type="text" id="TaskName" placeholder="Task Name...">
+  <input type="date" id="TaskDue">
 <span onclick="newTask()" id="addTask">+</span>
 	</div> <!-- end of the task name-->
 
@@ -24,36 +29,47 @@
 
 	<ul class = "subtasklist">
 		<li class="subtask">
-			<input type="text" id = "SubTaskName1" placeholder="Subtask 1...">
+		  <input type="text" id="SubTaskName1" placeholder="Subtask 1...">
+                  <input type="date" id="SubTaskDue1">
 		</li>
 		<li class="subtask">
-			<input type="text" id = "SubTaskName2" placeholder="Subtask 2...">
+		  <input type="text" id="SubTaskName2" placeholder="Subtask 2...">
+                  <input type="date" id="SubTaskDue2">
 		</li>
 		<li class="subtask">
-			<input type="text" id = "SubTaskName3" placeholder="Subtask 3...">
+		  <input type="text" id="SubTaskName3" placeholder="Subtask 3...">
+                  <input type="date" id="SubTaskDue3">
 		</li>
 
 	</ul> <!-- end of the subtask list -->
+        <span onclick="listAdd()" id="addSubTask">Add to my list</span>
+        </div>
 
-<span onclick="listAdd()" id="addSubTask">Add to my list</span>
+      <div>
+      <form id="display-options">
+        Items to display:
+      <select class="todo-options" id="todo-change-list-num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected="selected">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="All">All</option>
+      </select>
 
-</div>
-
-<div class = "mytasks" id="todolist">
-
-	<h4>My current task list</h4>
-
-
-</div>
-
-	<div id="home">
-	
-	<button class="home" id="back_home" onclick="window.location.href='https://rapa5960.github.io/homepage/'"> Back to Home page</button>
+     <!--<button id="show-complete-tasks" form="display-options">Show Completed Tasks</input>-->
+      </form>
     </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="todolist.js"></script>
+
+
+</div>
+
+<div id="todo-item-display-block">
+      <p> Your added to-do items! </p>
+</div>
+
 
 </body>
 
