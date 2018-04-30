@@ -1,8 +1,19 @@
 body{
-	margin: 50px;
+    margin: 50px;
+    font-size: large;
 }
 
-input[type=text] {
+ul {
+    background: aqua;
+    padding: 20px;
+}
+
+ul li {
+    background: silver;
+    margin: 5px;
+}
+
+input {
 	border: 2px solid;
 	width: 40%;
 	border-radius: 5px;
@@ -47,7 +58,7 @@ li {
   	color: #555;
   	text-align: center;
 	font-size: 50px;
-	
+
 
 }
 
@@ -79,4 +90,12 @@ li {
 	margin-bottom: 20px;
 	font-size: 30px;
 
+}
+
+/*from https://www.w3schools.com/howto/howto_js_todolist.asp*/
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
 }
