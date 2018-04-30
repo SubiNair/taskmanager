@@ -29,7 +29,7 @@ input {
 
 
 .subtask {
-	border-color:808080;
+	border-color:#BAEEC9;
 	color:808080;
 	width: 100%;
 	border-radius: 5px;
@@ -94,7 +94,7 @@ li {
 /*from https://www.w3schools.com/howto/howto_js_todolist.asp*/
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-    background: #888;
+    background: #65B891;
     color: #fff;
     text-decoration: line-through;
 }
