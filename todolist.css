@@ -56,6 +56,11 @@ li {
 	
 }
 
+li:empty {
+   border: none;
+}
+
+
 #addTask {
 
   	color: #555;
